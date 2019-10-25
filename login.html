@@ -1,0 +1,43 @@
+<html lang="pt-br">
+  <head>
+    <?PHP
+        session_start();
+        $email = $_POST['email'];
+    ?>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../../../favicon.ico">
+
+    <title>Login</title>
+
+   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+     <link href="https://fonts.googleapis.com/css?family=Merriweather:400,900,900i" rel="stylesheet">
+      <link href='css/login.css' rel='stylesheet' type='text/css'>
+      <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">  
+      <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+      <link rel="icon" href="images/minicat.png">
+  </head>
+
+  <body class="text-center">
+    <form class="form-login" method="post" action="verificalogin.php">
+      <a href='index.html' title='Ei, clique aqui para voltar ao inicio'><img class="mb-4" src="images/cat.png" alt="" width="72" height="72"></a>
+      <h1 class="h3 mb-3 font-weight-normal">Por favor, faça login</h1>
+      <label for="inputEmail" class="sr-only">Email</label>
+      <input type="email" name="email" id="inputEmail" class="form-control" placeholder="Digite seu Email..." title="Preencha este campo com seu Email" required autofocus>
+      <label for="inputPassword" class="sr-only">Senha</label>
+      <input type="password" name="senha" id="inputPassword" class="form-control" placeholder="Senha" title="Preenche este campo com sua senha" required>
+      <a class='anchorCad' href="usuario.html">Não possui uma conta? Clique aqui</a>
+      <div class="checkbox mb-3">
+        <label>
+          <input type="checkbox" value="remember-me"> Lembrar-se de mim
+        </label>
+      </div>
+      <button class="btn btn-lg btn-primary btn-block blogin" type="submit" name="fazlogin" id="fazlogin" >Fazer Login</button>
+      <p class="mt-5 mb-3 text-muted">© TCC Informática 2019</p>
+    </form>
+  </body>
+</html>

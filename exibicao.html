@@ -1,0 +1,507 @@
+<html>
+   <head>
+      <meta charset='utf-8'>
+     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+     <link href="https://fonts.googleapis.com/css?family=Merriweather:400,900,900i" rel="stylesheet">
+      <link href='css/style.css' rel='stylesheet' type='text/css'>
+      <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">  
+      <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+      <link rel="icon" href="images/minicat.png">
+      <title>cat.logue</title>
+      <meta charset='utf-8'>
+   </head>
+   <body>
+      
+      <a id="button" title="Clique em mim para voltar ao topo da página"></a>
+
+      <!------------------------------BARRA DE NAVEGAÇÃO---------------------------------->
+      <form method='get' action='index.html'>
+      <div class="top-nav-bar">
+         <div class='search-box'>
+            <i class="fa fa-bars" id='menu-btn' onclick='openmenu()'></i>
+            <i class="fa fa-times" id='close-btn' onclick='closemenu()'></i>
+            <a href='index.html'><img class='logo' src='images/final.jpg'></a>
+            <input type='text' class="form-control" placeholder="Digite o nome de um produto ou loja...">
+            <button class='input-group-text'><i class="fa fa-search"></i></button>
+         </div>
+         <div class='menu-bar'>
+            <ul>
+               <li class='seletor'><a href='#'><i class="fa fa-heart"></i>Favoritos</a></li>
+               <li class='seletor'><a href='usuario.html'><i class="fa fa-user"></i>Cadastrar</a></li>
+               <li class='seletor'><a href='login.html'><i class="fa fa-sign-in"></i>Entrar</a></li>
+            </ul>
+         </div>
+      </div>
+      </form>
+
+    <!-----------------SEÇÃO #1 DE PRODUTOS----------------------->
+    	<section class='em-alta'>
+    		<div class='container'>
+    			<div class='title-box'>
+               <h3>*Nome do produto*</h3>
+    			</div>
+            <!--1-->
+            <div class='row'>
+               <div class='col-md-3'>
+                  <div class='product-top'>
+                     <img src="images/produto1.jpeg">
+                     <div class='overlay-right'>
+                        <form method='get' action='loja_info.html'>
+                           <button type='submit' class="btn btn-secondary" title="Visualizar">
+                              <i class="fa fa-eye"></i>
+                           </button>
+                        </form>                        
+                        <form method='get' action='index.html'>
+                           <button type='submit' class="btn btn-secondary" title="Gostei">
+                              <i class="fa fa-heart-o"></i>
+                           </button>
+                        </form>
+                     </div>
+                  </div>
+                  <div class="product-bottom text-center">
+                        <h3>Air Jordan</h3>
+                        <h5>R$219.00</h5>              
+                  </div>
+               </div>
+
+            <!--2-->
+               <div class='col-md-3'>
+                  <div class='product-top'>
+                     <img src="images/produto2.jpg">
+                     <div class='overlay-right'>
+                        <form method='get' action='loja_info.html'>
+                           <button type='submit' class="btn btn-secondary" title="Visualizar">
+                              <i class="fa fa-eye"></i>
+                           </button>
+                        </form>                        
+                        <form method='get' action='index.html'>
+                           <button type='submit' class="btn btn-secondary" title="Gostei">
+                              <i class="fa fa-heart-o"></i>
+                           </button>
+                        </form>
+                     </div>
+                  </div>
+                  <div class="product-bottom text-center">
+                        <h3>Relógio</h3>
+                        <h5>R$320.00</h5>              
+                  </div>
+               </div>
+
+            <!--3-->
+               <div class='col-md-3'>
+                  <div class='product-top'>
+                     <img src="images/produto3.jpg">
+                     <div class='overlay-right'>
+                        <form method='get' action='loja_info.html'>
+                           <button type='submit' class="btn btn-secondary" title="Visualizar">
+                              <i class="fa fa-eye"></i>
+                           </button>
+                        </form>                        
+                        <form method='get' action='index.html'>
+                           <button type='submit' class="btn btn-secondary" title="Gostei">
+                              <i class="fa fa-heart-o"></i>
+                           </button>
+                        </form>
+                     </div>
+                  </div>
+                  <div class="product-bottom text-center">
+                        <h3>Blusa</h3>
+                        <h5>R$65.00</h5>              
+                  </div>
+               </div>
+
+            <!--4-->
+               <div class='col-md-3'>
+                  <div class='product-top'>
+                     <img src="images/produto4.jpg">
+                     <div class='overlay-right'>
+                        <form method='get' action='loja_info.html'>
+                           <button type='submit' class="btn btn-secondary" title="Visualizar">
+                              <i class="fa fa-eye"></i>
+                           </button>
+                        </form>                        
+                        <form method='get' action='index.html'>
+                           <button type='submit' class="btn btn-secondary" title="Gostei">
+                              <i class="fa fa-heart-o"></i>
+                           </button>
+                        </form>
+                     </div>
+                  </div>
+                  <div class="product-bottom text-center">
+                        <h3>Talheres</h3>
+                        <h5>R$80.00</h5>              
+                  </div>
+               </div>
+            </div>
+    		</div>
+    	</section>
+
+      <!------------SEÇÃO #2 DE PRODUTOS---------------->
+      <section class='em-alta'>
+         <div class='container'>
+            <!--1-->
+            <div class='row'>
+               <div class='col-md-3'>
+                  <div class='product-top'>
+                     <img src="images/produto1.jpeg">
+                     <div class='overlay-right'>
+                        <form method='get' action='loja_info.html'>
+                           <button type='submit' class="btn btn-secondary" title="Visualizar">
+                              <i class="fa fa-eye"></i>
+                           </button>
+                        </form>                        
+                        <form method='get' action='index.html'>
+                           <button type='submit' class="btn btn-secondary" title="Gostei">
+                              <i class="fa fa-heart-o"></i>
+                           </button>
+                        </form>
+                     </div>
+                  </div>
+                  <div class="product-bottom text-center">
+                        <h3>Air Jordan</h3>
+                        <h5>R$ tleis.00</h5>              
+                  </div>
+               </div>
+
+            <!--2-->
+               <div class='col-md-3'>
+                  <div class='product-top'>
+                     <img src="images/produto2.jpg">
+                     <div class='overlay-right'>
+                        <form method='get' action='loja_info.html'>
+                           <button type='submit' class="btn btn-secondary" title="Visualizar">
+                              <i class="fa fa-eye"></i>
+                           </button>
+                        </form>                        
+                        <form method='get' action='index.html'>
+                           <button type='submit' class="btn btn-secondary" title="Gostei">
+                              <i class="fa fa-heart-o"></i>
+                           </button>
+                        </form>
+                     </div>
+                  </div>
+                  <div class="product-bottom text-center">
+                        <h3>Relógio</h3>
+                        <h5>R$ 500 trilhão</h5>              
+                  </div>
+               </div>
+
+            <!--3-->
+               <div class='col-md-3'>
+                  <div class='product-top'>
+                     <img src="images/produto3.jpg">
+                     <div class='overlay-right'>
+                        <form method='get' action='loja_info.html'>
+                           <button type='submit' class="btn btn-secondary" title="Visualizar">
+                              <i class="fa fa-eye"></i>
+                           </button>
+                        </form>                        
+                        <form method='get' action='index.html'>
+                           <button type='submit' class="btn btn-secondary" title="Gostei">
+                              <i class="fa fa-heart-o"></i>
+                           </button>
+                        </form>
+                     </div>
+                  </div>
+                  <div class="product-bottom text-center">
+                        <h3>Blusa</h3>
+                        <h5>R$ alguma coisa.00</h5>              
+                  </div>
+               </div>
+
+            <!--4-->
+               <div class='col-md-3'>
+                  <div class='product-top'>
+                     <img src="images/produto4.jpg">
+                     <div class='overlay-right'>
+                        <form method='get' action='loja_info.html'>
+                           <button type='submit' class="btn btn-secondary" title="Visualizar">
+                              <i class="fa fa-eye"></i>
+                           </button>
+                        </form>                        
+                        <form method='get' action='index.html'>
+                           <button type='submit' class="btn btn-secondary" title="Gostei">
+                              <i class="fa fa-heart-o"></i>
+                           </button>
+                        </form>
+                     </div>
+                  </div>
+                  <div class="product-bottom text-center">
+                        <h3>Talheres</h3>
+                        <h5>R$ 20etrinta.00</h5>              
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+ <!------------SEÇÃO #3 DE PRODUTOS---------------->
+      <section class='em-alta'>
+         <div class='container'>
+            <!--1-->
+            <div class='row'>
+               <div class='col-md-3'>
+                  <div class='product-top'>
+                     <img src="images/produto1.jpeg">
+                     <div class='overlay-right'>
+                        <form method='get' action='loja_info.html'>
+                           <button type='submit' class="btn btn-secondary" title="Visualizar">
+                              <i class="fa fa-eye"></i>
+                           </button>
+                        </form>                        
+                        <form method='get' action='index.html'>
+                           <button type='submit' class="btn btn-secondary" title="Gostei">
+                              <i class="fa fa-heart-o"></i>
+                           </button>
+                        </form>
+                     </div>
+                  </div>
+                  <div class="product-bottom text-center">
+                        <h3>Air Jordan</h3>
+                        <h5>R$ tleis.00</h5>              
+                  </div>
+               </div>
+
+            <!--2-->
+               <div class='col-md-3'>
+                  <div class='product-top'>
+                     <img src="images/produto2.jpg">
+                     <div class='overlay-right'>
+                        <form method='get' action='loja_info.html'>
+                           <button type='submit' class="btn btn-secondary" title="Visualizar">
+                              <i class="fa fa-eye"></i>
+                           </button>
+                        </form>                        
+                        <form method='get' action='index.html'>
+                           <button type='submit' class="btn btn-secondary" title="Gostei">
+                              <i class="fa fa-heart-o"></i>
+                           </button>
+                        </form>
+                     </div>
+                  </div>
+                  <div class="product-bottom text-center">
+                        <h3>Relógio</h3>
+                        <h5>R$ 500 trilhão</h5>              
+                  </div>
+               </div>
+
+            <!--3-->
+               <div class='col-md-3'>
+                  <div class='product-top'>
+                     <img src="images/produto3.jpg">
+                     <div class='overlay-right'>
+                        <form method='get' action='loja_info.html'>
+                           <button type='submit' class="btn btn-secondary" title="Visualizar">
+                              <i class="fa fa-eye"></i>
+                           </button>
+                        </form>                        
+                        <form method='get' action='index.html'>
+                           <button type='submit' class="btn btn-secondary" title="Gostei">
+                              <i class="fa fa-heart-o"></i>
+                           </button>
+                        </form>
+                     </div>
+                  </div>
+                  <div class="product-bottom text-center">
+                        <h3>Blusa</h3>
+                        <h5>R$ alguma coisa.00</h5>              
+                  </div>
+               </div>
+
+            <!--4-->
+               <div class='col-md-3'>
+                  <div class='product-top'>
+                     <img src="images/produto4.jpg">
+                     <div class='overlay-right'>
+                        <form method='get' action='loja_info.html'>
+                           <button type='submit' class="btn btn-secondary" title="Visualizar">
+                              <i class="fa fa-eye"></i>
+                           </button>
+                        </form>                        
+                        <form method='get' action='index.html'>
+                           <button type='submit' class="btn btn-secondary" title="Gostei">
+                              <i class="fa fa-heart-o"></i>
+                           </button>
+                        </form>
+                     </div>
+                  </div>
+                  <div class="product-bottom text-center">
+                        <h3>Talheres</h3>
+                        <h5>R$ 20etrinta.00</h5>              
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+ <!------------SEÇÃO #4 DE PRODUTOS---------------->
+      <section class='em-alta'>
+         <div class='container'>
+            <!--1-->
+            <div class='row'>
+               <div class='col-md-3'>
+                  <div class='product-top'>
+                     <img src="images/produto1.jpeg">
+                     <div class='overlay-right'>
+                        <form method='get' action='loja_info.html'>
+                           <button type='submit' class="btn btn-secondary" title="Visualizar">
+                              <i class="fa fa-eye"></i>
+                           </button>
+                        </form>                        
+                        <form method='get' action='index.html'>
+                           <button type='submit' class="btn btn-secondary" title="Gostei">
+                              <i class="fa fa-heart-o"></i>
+                           </button>
+                        </form>
+                     </div>
+                  </div>
+                  <div class="product-bottom text-center">
+                        <h3>Air Jordan</h3>
+                        <h5>R$ tleis.00</h5>              
+                  </div>
+               </div>
+
+            <!--2-->
+               <div class='col-md-3'>
+                  <div class='product-top'>
+                     <img src="images/produto2.jpg">
+                     <div class='overlay-right'>
+                        <form method='get' action='loja_info.html'>
+                           <button type='submit' class="btn btn-secondary" title="Visualizar">
+                              <i class="fa fa-eye"></i>
+                           </button>
+                        </form>                        
+                        <form method='get' action='index.html'>
+                           <button type='submit' class="btn btn-secondary" title="Gostei">
+                              <i class="fa fa-heart-o"></i>
+                           </button>
+                        </form>
+                     </div>
+                  </div>
+                  <div class="product-bottom text-center">
+                        <h3>Relógio</h3>
+                        <h5>R$ 500 trilhão</h5>              
+                  </div>
+               </div>
+
+            <!--3-->
+               <div class='col-md-3'>
+                  <div class='product-top'>
+                     <img src="images/produto3.jpg">
+                     <div class='overlay-right'>
+                        <form method='get' action='loja_info.html'>
+                           <button type='submit' class="btn btn-secondary" title="Visualizar">
+                              <i class="fa fa-eye"></i>
+                           </button>
+                        </form>                        
+                        <form method='get' action='index.html'>
+                           <button type='submit' class="btn btn-secondary" title="Gostei">
+                              <i class="fa fa-heart-o"></i>
+                           </button>
+                        </form>
+                     </div>
+                  </div>
+                  <div class="product-bottom text-center">
+                        <h3>Blusa</h3>
+                        <h5>R$ alguma coisa.00</h5>              
+                  </div>
+               </div>
+
+            <!--4-->
+               <div class='col-md-3'>
+                  <div class='product-top'>
+                     <img src="images/produto4.jpg">
+                     <div class='overlay-right'>
+                        <form method='get' action='loja_info.html'>
+                           <button type='submit' class="btn btn-secondary" title="Visualizar">
+                              <i class="fa fa-eye"></i>
+                           </button>
+                        </form>                        
+                        <form method='get' action='index.html'>
+                           <button type='submit' class="btn btn-secondary" title="Gostei">
+                              <i class="fa fa-heart-o"></i>
+                           </button>
+                        </form>
+                     </div>
+                  </div>
+                  <div class="product-bottom text-center">
+                        <h3>Talheres</h3>
+                        <h5>R$ 20etrinta.00</h5>              
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!--------------------------------RODAPÉ----------------------------------->
+      <footer class="page-footer font-small indigo rodape">
+          <div>
+           <iframe class="col-md-12" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3750.2955224682037!2d-44.023230585120324!3d-19.954070386590296!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa695fdbb39c08f%3A0x8d7706a7909d9f96!2sSENAI+Contagem+CFP+Euvaldo+Lodi!5e0!3m2!1spt-BR!2sbr!4v1560175256349!5m2!1spt-BR!2sbr" height="150" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+        <div class="container text-center text-md-left">
+          <!-- Grid row -->
+          <div class="row">
+            <!-- Grid column -->
+            <hr class="clearfix w-100 d-md-none">
+            <!-- Grid column -->
+            <div class="col-md-3 mx-auto">
+              <h5 class="font-weight-bold text-uppercase mt-3 mb-4"><a href='#'>Quem Somos</a></h5>
+            </div>
+            <hr class="clearfix w-100 d-md-none">
+            <!-- Grid column -->
+            <div class="col-md-3 mx-auto">
+              <h5 class="font-weight-bold text-uppercase mt-3 mb-4"><a href="faleconosco.html">Fale Conosco</a></h5>
+            </div>
+          </div>
+        </div>
+        <div class="footer-copyright text-center py-3 last">© TCC Informática 2019</div>
+      </footer>
+      <!-- Footer -->
+         <!----------------------SCRIPT---------------------->
+         <script>
+            function openmenu(){
+                  document.getElementById('side-menu').style.display='block';
+                  document.getElementById('menu-btn').style.display='none';
+                  document.getElementById('close-btn').style.display='block';
+               }
+               function closemenu(){
+                  document.getElementById('side-menu').style.display='none';
+                  document.getElementById('menu-btn').style.display='block';
+                  document.getElementById('close-btn').style.display='none';
+               }
+            
+            /*-------------DE VOLTA AO TOPO---------------*/
+            var btn = $('#button');
+            $(window).scroll(function() {
+              if ($(window).scrollTop() > 300) {
+                btn.addClass('show');
+              } else {
+                btn.removeClass('show');
+              }
+            });
+            btn.on('click', function(e) {
+              e.preventDefault();
+              $('html, body').animate({scrollTop:0}, '300');
+            });
+
+            /*--------------------------STAR RATING---------------------*/
+            var $star_rating = $('.star-rating .fa');
+            var SetRatingStar = function() {
+              return $star_rating.each(function() {
+                if (parseInt($star_rating.siblings('input.rating-value').val()) >= parseInt($(this).data('rating'))) {
+                  return $(this).removeClass('fa-star-o').addClass('fa-star');
+                } else {
+                  return $(this).removeClass('fa-star').addClass('fa-star-o');
+                }
+              });
+            };
+            $star_rating.on('click', function() {
+              $star_rating.siblings('input.rating-value').val($(this).data('rating'));
+              return SetRatingStar();
+            });
+            SetRatingStar();
+            $(document).ready(function() {
+            });
+         </script>
+   </body>
+</html>

@@ -1,0 +1,43 @@
+create database TCC;
+use TCC;
+
+create table usuario(
+    ID integer not null primary key auto_increment,
+    nomeusu varchar(20) not null,
+    senha varchar(20) not null,
+    email varchar(20) not null,
+    telefone varchar(16) not null,
+    Cep varchar(8) not null,
+    Rua varchar(40),
+    Numero integer not null,
+    Bairro varchar(40),
+    Cidade varchar(40),
+    Estado varchar(2),
+    COD_LOJA int
+);
+
+create table loja(
+    ID integer not null primary key auto_increment,
+    nome varchar(40) not null,
+    cnpj varchar(14) not null,
+    email varchar(20) not null,
+    telefone varchar(16) not null,
+    Cep varchar(8) not null,
+    Rua varchar(40),
+    Numero integer not null,
+    Bairro varchar(40),
+    Cidade varchar(40),
+    Estado varchar(2),
+    COD_USU int not null
+);
+
+
+create table produto(
+    ID integer not null primary key auto_increment,
+    descricao varchar(40) not null,   
+    preco decimal(8,2) not null,
+    tipo varchar(20) not null,
+    NOME_IMG varchar(40) not null,
+    COD_USU int not null,
+    COD_LOJA int not null
+);
